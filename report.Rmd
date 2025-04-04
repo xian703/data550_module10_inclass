@@ -54,9 +54,11 @@ random_numbers3_breaks <- as.numeric(
   )
 )
 
-colors <- 1:4
+library(wesanderson)
+colors <- wes_palette("Zissou1", 4, type = "continuous")
 
 point_color <- colors[random_numbers3_breaks]
+
 plot(
   x = random_numbers1, y = random_numbers2,
   col = point_color,
