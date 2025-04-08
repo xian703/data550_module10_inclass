@@ -44,8 +44,8 @@ random_numbers3 <- readRDS(here::here("output", "random_numbers3.rds"))
 #| echo = FALSE
 random_numbers3_quantiles <- quantile(
   random_numbers3, 
-  seq(0, 1, length = 5)
-)
+  seq(0, 1, length = 5))
+colors <- RColorBrewer::brewer.pal(4, "Set1")
 random_numbers3_breaks <- as.numeric(
   cut(
     random_numbers3, 
